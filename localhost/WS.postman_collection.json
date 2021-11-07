@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "a8b5706a-f21a-4157-a526-3b3f77166161",
+		"name": "WS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ws",
+			"item": [
+				{
+					"name": "Посмотреть всё",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api/ad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"ad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Посмотреть выбранное",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api/ad/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"ad",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Добавить",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Contact_name",
+									"value": "Ivan",
+									"type": "text"
+								},
+								{
+									"key": "Contact_phone",
+									"value": "89323358553",
+									"type": "text"
+								},
+								{
+									"key": "date_end",
+									"value": "2021-12-01",
+									"type": "text"
+								},
+								{
+									"key": "Info_ad",
+									"value": "sdasdasd",
+									"type": "text"
+								},
+								{
+									"key": "Title_ad",
+									"value": "SASASASASAS",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/ad/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"ad",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "изменить",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Title_ad",
+									"value": "qweqweqwerrr",
+									"type": "text"
+								},
+								{
+									"key": "Info_ad",
+									"value": "dasdasd",
+									"type": "text"
+								},
+								{
+									"key": "Contact_name",
+									"value": "suus",
+									"type": "text"
+								},
+								{
+									"key": "contact_phone",
+									"value": "89323358553",
+									"type": "text"
+								},
+								{
+									"key": "date_end",
+									"value": "2021-12-01",
+									"type": "text"
+								},
+								{
+									"key": "key",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/ad/2/edit/data",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"ad",
+								"2",
+								"edit",
+								"data"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ТА САМАЯ ПРОБЛЕМА",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Title_ad",
+									"value": "Ivan2",
+									"type": "text"
+								},
+								{
+									"key": "Info_ad",
+									"value": "sobachka",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "Contact_name",
+									"value": "Igor",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "contact_phone",
+									"value": "89323358553",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "date_end",
+									"value": "2021-12-05",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "key",
+									"value": "2136",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/ad/2/edit/data\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"ad",
+								"2",
+								"edit",
+								"data\n"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "Contact_name",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "Info_ad",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "Contact_name",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "contact_phone",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "date_end",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Проверка",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "key",
+									"value": "8558",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/ad/3/proverka",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"ad",
+								"3",
+								"proverka"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{server}/api/ad/{ID}/edit/data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "card_text",
+									"value": "qweqweqwerrr",
+									"type": "text"
+								},
+								{
+									"key": "card_text",
+									"value": "dasdasd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/cards/3/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"cards",
+								"3",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{server}/api/ad/edit/file/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "card_text",
+									"value": "qweqweqwerrr",
+									"type": "text"
+								},
+								{
+									"key": "card_text",
+									"value": "dasdasd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/cards/3/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"cards",
+								"3",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "cards {Card_id}/likeDelite",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "card_text",
+									"value": "qweqweqwweqwe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/cards/3/like/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"cards",
+								"3",
+								"like",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cards {Card_id}/delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/cards/4/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"cards",
+								"4",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cards {Card_id}/deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/cards/deleteAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"cards",
+								"deleteAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cards {Card_id}/like",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/cards/3/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"cards",
+								"3",
+								"like"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

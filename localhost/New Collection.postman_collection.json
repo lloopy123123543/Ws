@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "7c1943c7-a621-49ac-a62c-777f4f349d7d",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

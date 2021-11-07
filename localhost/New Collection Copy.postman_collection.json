@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "3b148b6b-0139-4918-94d2-52fa6a7bc115",
+		"name": "New Collection Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/cards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards{Card_id}/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "card_text",
+							"value": "qweqweqwweqwe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/cards/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards {Card_id}/edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "card_text",
+							"value": "qweqweqwerrr",
+							"type": "text"
+						},
+						{
+							"key": "card_text",
+							"value": "dasdasd",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/cards/3/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"3",
+						"edit"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards {Card_id}/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/cards/4/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"4",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards {Card_id}/deleteAll",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/cards/deleteAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"deleteAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cards {Card_id}/like",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/cards/3/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"cards",
+						"3",
+						"like"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
